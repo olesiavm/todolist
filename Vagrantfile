@@ -4,8 +4,7 @@
 # you're doing.
 Vagrant.configure("2") do |config|
   #https://app.vagrantup.com/ubuntu/boxes/focal64
-  #config.vm.box = "ubuntu/focal64"
-  config.vm.box = "ubuntu20"
+  config.vm.box = "ubuntu/focal64"
   config.vm.hostname = "public.local"
 
   config.ssh.insert_key = false
