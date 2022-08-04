@@ -5,18 +5,18 @@
         <div class="id-child">
             <table class="table table-sm form-table">
                 <tbody>
-                <tr>
-                    <td>Name:</td>
-                    <td><input type="text" name="name"></td>
-                </tr>
-                <tr>
-                    <td>Email:</td>
-                    <td><input type="email" name="email"></td>
-                </tr>
-                <tr>
-                    <td>Task description:</td>
-                    <td><input type="text" name="description"></td>
-                </tr>
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type="text" name="name"></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Task description:</td>
+                        <td><input type="text" name="description"></td>
+                    </tr>
                 </tbody>
             </table>
         </div>
