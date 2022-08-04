@@ -35,10 +35,10 @@
                             </td>
                         </tr>
                     <?php endif; ?>
-                <tr>
-                    <td></td>
-                    <td><input type="submit" name="editTask" value="Сохранить"></td>
-                </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" name="editTask" value="Сохранить"></td>
+                    </tr>
                 </tbody>
             </table>
         </div>

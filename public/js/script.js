@@ -1,5 +1,5 @@
-jQuery(function($) {
-	// scroll-table
-	$('.id-parent').perfectScrollbar();
+jQuery(function ($) {
+    // scroll-table
+    $('.id-parent').perfectScrollbar();
 });
 
