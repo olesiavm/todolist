@@ -99,5 +99,5 @@ curl --silent https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
 
 echo "--- Update project components ---"
-cd /var/www/html/${PROJECT_NAME}
-#sudo -u vagrant -H sh -c "composer install"
+cd /var/www/html/
+sudo -u vagrant -H sh -c "composer install"

@@ -18,7 +18,6 @@ Task description is available [here](task.md)
 ## Installation instructions
  - ``git clone https://github.com/olesiavm/todolist``
  - ``cd todolist``
- - ``composer install``
  - run ``vagrant up``
  - go to ``https://192.168.50.5/``  
 
