@@ -5,7 +5,7 @@ use PHPUnit\Framework\TestCase;
 
 class AuthTest extends TestCase
 {
-    private const URL = 'http://192.168.50.5/authentication';
+    private const URL = '/authentication';
 
     /**
      * @dataProvider getDataProviderForAuthForm
@@ -14,7 +14,7 @@ class AuthTest extends TestCase
     {
         $curl = curl_init();
 
-        curl_setopt($curl, CURLOPT_URL, self::URL);
+        curl_setopt($curl, CURLOPT_URL, php_uname("n") . self::URL);
         curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
         curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);

@@ -5,12 +5,12 @@ use PHPUnit\Framework\TestCase;
 
 class TaskTest extends TestCase
 {
-    const URL_SHOW = 'http://192.168.50.5/show-tasks';
-    const URL_CREATE = "http://192.168.50.5/create-task";
+    const URL_SHOW = '/show-tasks';
+    const URL_CREATE = "/create-task";
 
     public function testShowTask()
     {
-        $curl = curl_init(self::URL_SHOW);
+        $curl = curl_init(php_uname("n") . self::URL_SHOW);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
         curl_setopt($curl, CURLOPT_HEADER, false);
@@ -28,7 +28,7 @@ class TaskTest extends TestCase
         $data = ['name' => '', 'email' => '', 'description' => '', 'createTask' => 'Сохранить'];
 
         $curl = curl_init();
-        curl_setopt($curl, CURLOPT_URL, self::URL_CREATE);
+        curl_setopt($curl, CURLOPT_URL, php_uname("n") . self::URL_CREATE);
         curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
         curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
