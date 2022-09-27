@@ -1,5 +1,4 @@
 <?php
-//namespace App\Controller;
 
 spl_autoload_register(function ($name) {
     $fileName = basename(str_replace('\\', '/', $name));
